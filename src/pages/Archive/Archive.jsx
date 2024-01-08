@@ -20,7 +20,14 @@ function Archive() {
 
   const getData = async () => {
     const data = await getActivitiesData();
-    setActivitiesData(data.filter((activity) => activity.is_archived));
+    if(!data) {
+      toast({
+        title: "Error",
+        description: "Unable to archive all selected activities",
+        variant: "destructive",
+      });
+    }
+    data && setActivitiesData(data.filter((activity) => activity.is_archived));
     setIsLoading(false);
   };
 
