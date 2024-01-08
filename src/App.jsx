@@ -1,35 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import { BrowserRouter, createBrowserRouter, createRoutesFromElements, Route, RouterProvider, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from './components/Header';
 import Home from './pages/Home/Home';
 import Archive from './pages/Archive/Archive';
+import { Toaster } from './components/ui/toaster';
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route>
-      <Route index element={<Home />} />
-      <Route path="archive" element={<Archive />} />
-    </Route>
-  )
-);
 
 function App() {
   return (
     <BrowserRouter>
-      <div>
+      <div className='max-w-[1080px] mx-auto' >
         <Header />
         <Routes>
           <Route index element={<Home />} />
           <Route path="archive" element={<Archive />} />
         </Routes>
       </div>
+      <Toaster />
     </BrowserRouter>
-    // <RouterProvider router={router}>
-    //   {/* Your other components */}
-    // </RouterProvider>
   );
 }
 

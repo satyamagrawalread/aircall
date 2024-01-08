@@ -1,13 +1,21 @@
-import React from 'react'
-import '../styles/header.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from "react-router-dom";
+import { Tabs, TabsList, TabsTrigger } from "./ui/tabs";
 
 export default function Header() {
-    // const navigate = useNavigate();
+  const pathname = useLocation().pathname;
+
   return (
-    <div className='mainContainer'>
-        <Link to='/' className="tab activityTab" >Activity</Link>
-        <Link to='/archive' className="tab archivedTab">Archive</Link>
+    <div className="my-8">
+      <Tabs value={pathname} className="w-full">
+        <TabsList className="w-full">
+          <TabsTrigger className="w-1/2" value="/" asChild>
+            <Link to={"/"}>Activity</Link>
+          </TabsTrigger>
+          <TabsTrigger className="w-1/2" value="/archive" asChild>
+            <Link to={"/archive"}>Archive</Link>
+          </TabsTrigger>
+        </TabsList>
+      </Tabs>
     </div>
-  )
+  );
 }
