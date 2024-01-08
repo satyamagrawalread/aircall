@@ -1,0 +1,20 @@
+.homeContainer {
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+table {
+    width: 800px;
+    text-align: center;
+}
+
+@media screen and (max-width: 830px) {
+    /* .homeContainer {
+        padding: 10px;
+    } */
+    table {
+        width: 100%;
+    }
+}
