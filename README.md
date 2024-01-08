@@ -4,8 +4,7 @@
 ## _An Activity Call Log_
 
 
-
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+Versel Deployment Link: https://aircall-wine.vercel.app/
 
 Aircall is a webpage to view activities with the ability to archive/unarchive activity.
 
@@ -28,3 +27,4 @@ cd aircall
 npm install
 npm run dev
 ```
+
