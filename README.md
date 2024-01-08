@@ -1,8 +1,30 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Aircall
+## _An Activity Call Log_
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
+Aircall is a webpage to view activities with the ability to archive/unarchive activity.
+
+
+
+## Features
+
+- View Activities details
+- Archive/Unarchive Activity
+- Multiple selection
+
+
+## Installation
+
+
+Install the dependencies and devDependencies.
+
+```sh
+cd aircall
+npm install
+npm run dev
+```
