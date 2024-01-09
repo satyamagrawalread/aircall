@@ -38,7 +38,7 @@ const ActivitySheet = ({ activity, open, onOpenChange }) => {
 
   return (
     <Sheet open={open} onOpenChange={onOpenChange}>
-      <SheetContent className="w-[380px] sm:w-[520px]">
+      <SheetContent className="w-[300px] sm:w-[540px]">
         <SheetHeader>
           <SheetTitle>Activity Details</SheetTitle>
           <SheetDescription>Details about this activity</SheetDescription>
